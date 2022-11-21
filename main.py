@@ -147,6 +147,8 @@ def main(date:int,month:int,year:int):
     
     symbols = exchange_info_pairs()
     starttime = datetime_to_timestamp(year,month,date,3,0,0)
+    print("SEARCHING FOR TOP 10 COINS")
+    print("_________________________________________________________")
     top_10_symbols = top_10(symbols,starttime)
 
     # data after selection
@@ -167,9 +169,8 @@ def main(date:int,month:int,year:int):
             high_24,low_24,close_24 = data_24hr[x]
         
         
-        print(f"{x}:Entry price:{close_8} <> highest_price: {high_24} <> p profit margin: {round(((high_24 - close_8)/close_8) * 100,2)} %")
+        print(f"{x}:Entry price :{close_8} <>possible drawdown: {round(((low_24 - close_8)/close_8) * 100,2)} % <> possible profit: {round(((high_24 - close_8)/close_8) * 100,2)} %")
 
 
 if __name__ == "__main__":
-    main(15,11,2022)
-
+    main(18,11,2021)

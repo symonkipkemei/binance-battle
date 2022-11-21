@@ -16,19 +16,19 @@
 
 **Binance-Supremacy-Battle**
 
-A classical supremacy battle of who is the most fast(volatile) and strongest(momentum) coin/symbol pair  amongst usdt pairs within 24hrs . The battle takes place at the USDT SPOT MARKET (the base quote).There are two fronts; the bear front and the bulls front. Each battle lasts for 24hrs.
+A classical supremacy battle of who is the most fast(volatile) and strongest(momentum) coin/symbol pair  amongst usdt pairs within 24hrs . The battle takes place at the USDT SPOT MARKET (the base quote).The bulls front has been explored for now. Each battle lasts for 24hrs.
 
 The draw  happens in the first 8 hrs starting from UTC +00.00  to select the top 10 strongest(momentum change) symbol pairs  in both fronts.
 
-After the draw takes place, the top 10 symbol pairs are monitored at intervals of 4hrs( 4 times) and their vitals captured ( Open, High, low, close, Volume) and stored in a mysql database.
+After the draw takes place, the top 10 symbol pairs are monitored after 24hrs and their vitals captured (High, low, close) .
 
-The battle ends at UTC +00.00 Upon which another battle preceeded with a draw commences.
+The vitals are analyzed at the end of the 24hrs for each symbol pair and deductions made to determine if their speed and strength was steady for 24hrs after the draw.
 
-The vitals are analyzed at the end of the 24hrs for each symbol pair and deductions made to determine if their speed and strength was steady for 16hrs after the draw.
+The parameters of analysis are:
 
-The parameters of analysis are subject to further study .
-
-The analysis will be served at an endpoint (e.g. using sandman2)
+1. high (after 24 hrs) - close( after the initial draw)
+2. the variation of close and high in percentage
+4. If the change was positive or negative,if positive profit was made
 
 
 **Hypothesis**
@@ -42,8 +42,6 @@ The analysis will be served at an endpoint (e.g. using sandman2)
 
 **Builth With**
 - Python
-- Mysql Database
-- Pandas
 - Binance API
 
 
@@ -68,8 +66,6 @@ The project was developed in (wsl2 ubuntu environment) .
 To get this project up and running locally, you must already have the following installed:
 - [python plus the necessary packages installed on your computer](https://www.python.org/downloads/)
 - [code editor ](https://code.visualstudio.com/)
-- [mysql workbench](https://dev.mysql.com/downloads/workbench/)
-- [mysql server installed on your terminal](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
 
 
 **simple steps to set up on your local machine**
@@ -77,14 +73,17 @@ To get this project up and running locally, you must already have the following 
 - git clone ```https://github.com/symonkipkemei/binance-battle.git ```
 - set up your api key/secret key as virtual environment variable
 - Set up and activate the virtual environment.
-
-
+- install dependencies ```pip install -r requirements.txt```
+- run main.py
+- (incase of any installation issues,  screenshot ans share on [issues page](https://github.com/symonkipkemei/binance-battle/issues)
 
 
 <ILLUSTRATIONS>
 
 <h1 id="illus">Illustrations</h1>
 
+![Search](img/search.JPG)
+![Search](img/search2.JPG)
 
 <PROJECT-INFORMATION>
 
@@ -94,10 +93,11 @@ To get this project up and running locally, you must already have the following 
 - In progress
 
 **To do**
-- 
+-  Establish the RSI of each pair..
+-  Detrmine coins whose momentum is slowing down within the first draw
 
 **complete**
-- 
+- Determine the change in momentum  of the top 10 coins after 24 hrs
 
 **features**
 - Your suggestions 😊............
@@ -153,7 +153,6 @@ Finally, if you've read this far, don't forget to give this repo a ⭐️.
 ## Acknowledgments
 
 - [codingnomads](https://codingnomads.co/).
-- [sqlalchemy documentation](https://www.sqlalchemy.org/)
 
 
 
