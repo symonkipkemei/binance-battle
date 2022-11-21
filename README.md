@@ -10,7 +10,7 @@
 
 <INTRODUCTION>
 
-<h1 id="intro">Pesa Mfukoni</h1>
+<h1 id="intro">Binance Battle</h1>
 
 ![Networth](img/battle.JPG)
 
@@ -74,7 +74,7 @@ To get this project up and running locally, you must already have the following 
 
 **simple steps to set up on your local machine**
 
-- git clone ```https://github.com/symonkipkemei/Pesa_Mfukoni.git ```
+- git clone ```https://github.com/symonkipkemei/binance-battle.git ```
 - set up your api key/secret key as virtual environment variable
 - Set up and activate the virtual environment.
 
@@ -110,7 +110,7 @@ Contributions, issues and feature requests are always welcome!
 
 I love meeting other developers, interacting and sharing.
 
-Feel free to check the [issues page](https://github.com/symonkipkemei/Pesa_Mfukoni/issues).
+Feel free to check the [issues page](https://github.com/symonkipkemei/binance-battle/issues).
 
 **How to Contribute**
 
@@ -118,10 +118,10 @@ To get a local copy up and running follow these simple example steps.
 
 ```
 - Fork the repository
-- git clone https://github.com/your_username/Pesa_Mfukoni
+- git clone https://github.com/your_username/binance-battle
 - git checkout develop
 - git checkout -b branch name
-- git remote add upstream https://github.com/symonkipkemei/Pesa_Mfukoni
+- git remote add upstream https://github.com/symonkipkemei/binance-battle
 - git pull upstream develop
 - git commit -m "commit message"
 - git push -u origin HEAD
