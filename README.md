@@ -74,7 +74,7 @@ To get this project up and running locally, you must already have the following 
 - set up your api key/secret key as virtual environment variable
 - Set up and activate the virtual environment.
 - install dependencies ```pip install -r requirements.txt```
-- run main.py
+- set up the date you would like to inspect the battle main(date, month, year)
 - (incase of any installation issues,  screenshot ans share on [issues page](https://github.com/symonkipkemei/binance-battle/issues)
 
 
